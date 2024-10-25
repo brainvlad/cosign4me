@@ -1,0 +1,59 @@
+.quote {
+    display: flex;
+
+    &__layout {
+        max-width: 1440px;
+        padding-top: 120px;
+        padding-right: 20px;
+        padding-left: 16px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__decor {
+    }
+
+    &__info {
+        padding-top: 70px;
+    }
+
+    &__text {
+        max-width: 860px;
+        font-size: 64px;
+        line-height: 94%;
+        letter-spacing: -0.02em;
+        margin-bottom: 40px;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__avatar {
+        width: 72px;
+        aspect-ratio: 1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__user-info {
+        color: rgba($color: $dark-grey, $alpha: 0.8);
+    }
+
+    &__user-name {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 120%;
+    }
+
+    &__user-grade {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+    }
+}

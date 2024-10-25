@@ -1,0 +1,218 @@
+.hero {
+    max-width: 1328px;
+    margin: 0 auto;
+    padding: 44px 16px 0;
+    position: relative;
+    @include mobile-lg {
+        padding-top: 16px;
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 65%;
+        top: 146px;
+        @include mobile-lg {
+            display: none;
+        }
+    }
+
+    &__layout {
+        min-height: 780px;
+        background-image: url(./../img/hero-bg.png);
+        background-position: center bottom;
+        background-color: $blue-dark;
+        background-repeat: no-repeat;
+        @include mobile-lg {
+            background-size: auto 70%;
+        }
+    }
+
+    &__body {
+        padding-top: 121px;
+        display: flex;
+        justify-content: space-between;
+        color: $white-bg;
+        @include mobile-lg {
+            padding-top: 26px;
+        }
+    }
+
+    &__left {
+        max-width: 394px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 513px;
+        @include tablet {
+            max-width: 265px;
+        }
+        @include mobile-lg {
+            margin: 0 auto;
+            max-width: 390px;
+        }
+    }
+
+    &__left-info {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    &__caption {
+        font-weight: 900;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 83%;
+        letter-spacing: -0.02em;
+        color: rgba(248, 248, 248, 0.8);
+
+        @include tablet {
+            font-size: 64px;
+            line-height: 81%;
+            width: 100%;
+        }
+        @include mobile-lg {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__right {
+        padding-top: 61px;
+        max-width: 293px;
+        @include tablet {
+            max-width: 203px;
+        }
+        @include mobile-lg {
+            display: none;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 24px;
+    }
+
+    &__info-item {
+    }
+
+    &__info-caption {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    &__info-title {
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    &__info-separator {
+        width: 1px;
+        height: 16px;
+        background-color: $white-bg;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 24px;
+    }
+
+    &__download {
+    }
+
+    &__download-title {
+        font-weight: 900;
+        font-size: 14px;
+        margin-bottom: 19px;
+    }
+
+    &__download-btn {
+        display: block;
+    }
+
+    &__scroll {
+        height: 140px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            top: 0;
+            bottom: 0;
+            background-color: $while-low;
+        }
+        @include mobile-lg {
+            display: none;
+        }
+    }
+
+    &__scroll-item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        height: 34px;
+        border-left: 1px solid $white;
+        padding-left: 16px;
+        position: relative;
+    }
+}
+
+.hero-mobile {
+    display: none;
+    background-color: $blue-dark;
+    color: $white-bg;
+    padding: 32px 16px;
+    @include mobile-lg {
+        display: block;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 24px;
+    }
+
+    &__list-item {
+    }
+
+    &__list-item-caption {
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    &__list-item-title {
+        font-weight: 900;
+        font-size: 20px;
+        color: #f8f8f8;
+    }
+
+    &__list-separator {
+        width: 1px;
+        height: 16px;
+        background-color: $white-bg;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 26px;
+    }
+
+    &__download {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
