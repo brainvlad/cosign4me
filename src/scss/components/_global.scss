@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Mabry Pro', sans-serif;
     background-color: $white-bg;
+    -webkit-tap-highlight-color: transparent;
 }
 

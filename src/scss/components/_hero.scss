@@ -51,11 +51,17 @@
             max-width: 390px;
         }
     }
+    
 
     &__left-info {
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
+        @include mobile-lg {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        opacity: 0;
+        transform: translateY(60px);
+        animation: fadeIn 0.5s ease-out forwards;
     }
 
     &__caption {
@@ -72,6 +78,10 @@
         line-height: 83%;
         letter-spacing: -0.02em;
         color: rgba(248, 248, 248, 0.8);
+
+        span {
+            color: rgba(248, 248, 248, 1);
+        }
 
         @include tablet {
             font-size: 64px;
@@ -92,6 +102,9 @@
         @include mobile-lg {
             display: none;
         }
+        opacity: 0;
+        transform: translateY(60px);
+        animation: fadeIn 0.5s ease-out forwards;
     }
 
     &__info {
@@ -128,6 +141,7 @@
     }
 
     &__download {
+
     }
 
     &__download-title {
@@ -137,7 +151,28 @@
     }
 
     &__download-btn {
+        width: fit-content;
         display: block;
+        position: relative;
+        z-index: 0;
+        &::before {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            opacity: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 100px;
+            background-color: rgba(248, 248, 248, 0.3);
+            pointer-events: none;
+            transition: all 0.15s;
+        }
+        &:hover::before {
+            transform: scale(1.1, 1.25);
+            opacity: 1;
+        }
     }
 
     &__scroll {
@@ -164,6 +199,34 @@
         border-left: 1px solid $white;
         padding-left: 16px;
         position: relative;
+        animation: moveUpDown 3s infinite;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(20px);
+        }
+        80% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(60px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
 }
 
@@ -214,5 +277,6 @@
         display: block;
         width: fit-content;
         margin: 0 auto;
+        
     }
 }

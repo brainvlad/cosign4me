@@ -19,10 +19,10 @@
                     <img src="./img/cosign-logo.svg" alt="Cosign">
                 </div>
                 <nav class="header__nav">
-                    <a href="#" class="header__nav-item">About us</a>
-                    <a href="#" class="header__nav-item">FAQ</a>
-                    <a href="#" class="header__nav-item">Terms</a>
-                    <a href="#" class="header__nav-item">Contact us</a>
+                    <a href="#about" class="header__nav-item">About us</a>
+                    <a href="#faq" class="header__nav-item">FAQ</a>
+                    <a href="./files/terms.pdf" class="header__nav-item">Terms</a>
+                    <a href="#contact" class="header__nav-item">Contact us</a>
                 </nav>
                 <a href="#" class="header__download">DOWNLOAD</a>
             </header>
@@ -34,8 +34,8 @@
                         </div>
                         <h1 class="hero__title">
                             Lorem &
-                            lorem ipsum 
-                            some text
+                            <span>lorem ipsum
+                            some</span> text
                         </h1>
                     </div>
                     <div class="hero__scroll">
@@ -97,7 +97,7 @@
             <img src="./img/app-store-btn.png" alt="download cosign">
         </a>
     </div>
-    <div class="square-list">
+    <div class="square-list" id="about">
         <div class="square-list__item">
             <div class="square-list__body">
                 <div class="square-list__img">
@@ -181,26 +181,42 @@
     </div>
 
 
-    <div class="faq">
+    <div class="faq" id="faq">
         <div class="faq__main">
             <div class="faq__title">
                 Frequently Asked Questions
             </div>
             <div class="faq__list">
-                <div class="faq__list-item">
+                <div class="faq__list-item active" data-question="1">
                     Lorem Ipsum dolor sit amet?
                 </div>
-                <div class="faq__list-item">
+                <div class="faq__list-item-answer faq__list-item-answer_mobile" data-answer="1">
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
+                </div>
+                <div class="faq__list-item" data-question="2">
                     Lorem ipsum dolor sit amet consectetur. Quam enim nunc curabitur arcu?
                 </div>
-                <div class="faq__list-item">
+                <div class="faq__list-item-answer faq__list-item-answer_mobile" data-answer="2">
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
+                </div>
+                <div class="faq__list-item" data-question="3">
                     Lorem Ipsum dolor sit amet?
                 </div>
-                <div class="faq__list-item">
+                <div class="faq__list-item-answer faq__list-item-answer_mobile" data-answer="3">
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
+                </div>
+                <div class="faq__list-item" data-question="4">
                     Lorem ipsum dolor sit amet consectetur. Turpis dignissim commodo aliquet ornare auctor in. Felis neque potenti risus imperdiet non ullamcorper leo?
                 </div>
+                <div class="faq__list-item-answer faq__list-item-answer_mobile" data-answer="4">
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
+                </div>
             </div>
-            <a href="#" class="faq__terms-btn">
+            <a href="./files/terms.pdf" target="_blank" class="faq__terms-btn">
                 Our Terms & Conditions 
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.6084 9.99992L13.4417 5.83325M17.6084 9.99992L13.4417 14.1666M17.6084 9.99992H2.6084" stroke="#353535" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -208,9 +224,33 @@
             </a>
         </div>
         <div class="faq__answer">
-            <div class="faq__answer-item">
+            <div class="faq__answer-item active" data-answer="1">
+                <div class="faq__answer-question">Lorem ipsum dolor sit amet consectetur. Quam enim nunc curabitur arcu?</div>
+                <div class="faq__answer-body">
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
+                </div>
+            </div>
+            <div class="faq__answer-item" data-answer="2">
                 <div class="faq__answer-question">Lorem Ipsum dolor sit amet?</div>
                 <div class="faq__answer-body">
+                    222<br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
+                </div>
+            </div>
+            <div class="faq__answer-item" data-answer="3">
+                <div class="faq__answer-question">Lorem Ipsum dolor sit amet?</div>
+                <div class="faq__answer-body">
+                    333<br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
+                    Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
+                </div>
+            </div>
+            <div class="faq__answer-item" data-answer="4">
+                <div class="faq__answer-question">Lorem ipsum dolor sit amet consectetur. Turpis dignissim commodo aliquet ornare auctor in. Felis neque potenti risus imperdiet non ullamcorper leo?</div>
+                <div class="faq__answer-body">
+                    444<br>
                     Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.<br><br>
                     Lorem ipsum dolor sit amet consectetur. Diam facilisis id vel aliquam enim imperdiet dignissim ac. Risus ultricies aliquam arcu nulla consequat in faucibus ut. Maecenas imperdiet at mauris ac sed mi erat venenatis urna. Hac egestas quisque quam nibh. Augue magna erat tortor suspendisse mollis placerat. Turpis odio ipsum ut amet nibh tortor hac quis. Sed purus augue platea laoreet et. Enim neque ipsum diam odio id sit integer. Quam aenean lectus condimentum ut consectetur sapien quis. Metus adipiscing eleifend arcu dolor.
                 </div>
@@ -218,32 +258,32 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact__body">
             <div class="contact__title">
                 Contact our<br> 
                 friendly team
             </div>
             <div class="contact__list">
-                <a href="#" class="contact__item">
+                <a href="https://maps.app.goo.gl/mBHUSk8gvterAkT76" target="_blank" class="contact__item">
                     <img src="./img/map-pin.svg">
                     <div class="contact__item-title">We’re here</div>
                     <div class="contact__item-subtitle">Address Line 1</div>
                 </a>
                 <div class="contact__item-separator"></div>
-                <a href="#" class="contact__item">
+                <a href="tel:+11111111111" class="contact__item">
                     <img src="./img/phone-icon.svg">
                     <div class="contact__item-title">Call us</div>
                     <div class="contact__item-subtitle">+1 111 111 11 11</div>
                 </a>
                 <div class="contact__item-separator"></div>
-                <a href="#" class="contact__item">
+                <a href="mailto:cosign@mail.com" class="contact__item">
                     <img src="./img/mail-icon.svg">
                     <div class="contact__item-title">Message us</div>
                     <div class="contact__item-subtitle">cosign@mail.com</div>
                 </a>
                 <div class="contact__item-separator"></div>
-                <a href="#" class="contact__item">
+                <a href="mailto:cosign@mail.com" class="contact__item">
                     <img src="./img/chat.svg">
                     <div class="contact__item-title">Chat with us</div>
                     <div class="contact__item-subtitle">cosign@mail.com</div>
@@ -257,14 +297,24 @@
                 <img src="./img/cosign-logo.svg" alt="Cosign">
             </div>
             <nav class="header__nav">
-                <a href="#" class="header__nav-item">About us</a>
-                <a href="#" class="header__nav-item">FAQ</a>
-                <a href="#" class="header__nav-item">Terms</a>
-                <a href="#" class="header__nav-item">Contact us</a>
+                <a href="#about" class="header__nav-item">About us</a>
+                <a href="#faq" class="header__nav-item">FAQ</a>
+                <a href="./files/terms.pdf" class="header__nav-item">Terms</a>
+                <a href="#contact" class="header__nav-item">Contact us</a>
             </nav>
             <a href="#" class="header__download">DOWNLOAD</a>
         </header>
     </div> 
+
+    <div class="burger" id="burger">
+        <nav class="burger__nav">
+            <a href="#about" class="burger__nav-item">About us</a>
+            <a href="#faq" class="burger__nav-item">FAQ</a>
+            <a href="./files/terms.pdf" class="burger__nav-item">Terms</a>
+            <a href="#contact" class="burger__nav-item">Contact us</a>
+        </nav>
+    </div>
+
     <script src="./js/index.bundle.js"></script>
 </body>
 </html>

@@ -87,7 +87,7 @@ gulp.task('fonts:dev', function() {
 gulp.task('files:dev', function() {
     return gulp
         .src('./src/files/**/*')
-        .pipe(gulp.dest('./build/files/'));
+        .pipe(copy('./build/files/', { prefix: 2 }));;
 });
 
 gulp.task('server:dev', function() {

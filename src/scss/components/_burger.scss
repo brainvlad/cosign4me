@@ -1,0 +1,45 @@
+.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: -moz-linear-gradient(140deg, rgb(142, 173, 219) 0%, rgb(142, 173, 219) 33%, rgba(0, 212, 255, 0) 60%);
+    background: -webkit-linear-gradient(140deg, rgb(142, 173, 219) 0%, rgb(142, 173, 219) 33%, rgba(0, 212, 255, 0) 60%);
+    background: linear-gradient(140deg, rgb(142, 173, 219) 0%, rgb(142, 173, 219) 33%, rgba(0, 212, 255, 0) 60%);
+    transition: transform 0.1s, opacity 0.2s;
+    pointer-events: none;
+    opacity: 0;
+    transform-origin: top left;
+    transform: translate(-100%, -100%);
+}
+
+.burger.open {
+    pointer-events: unset;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.burger__nav {
+    max-width: 50%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.burger__nav-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
