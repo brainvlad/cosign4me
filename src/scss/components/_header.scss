@@ -50,10 +50,18 @@
     background-color: $blue-dark;
     border-top: 1px solid rgba(53, 53, 53, 0.28);
     @include mobile-lg {
-        display: none;
+        border-top: none;
+        padding-top: 12px;
     }
     .header {
         max-width: 1320px;
         margin: 0 auto;
+        @include mobile-lg {
+            justify-content: center;
+        }
+        .header__download {
+            background-color: $white;
+            color: $dark-grey;
+        }
     }
 }

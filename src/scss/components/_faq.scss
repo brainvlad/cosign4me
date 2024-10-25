@@ -6,6 +6,13 @@
     align-items: center;
     gap: 52px;
     padding-right: 16px;
+    padding-left: 16px;
+    @include tablet {
+        gap: 24px;
+    }
+    @include mobile-lg {
+        margin: 60px auto;
+    }
 
     &__main {
         background-color: $orange;
@@ -14,6 +21,14 @@
         width: 50%;
         max-width: 630px;
         border-radius: 32px;
+        @include tablet {
+            padding: 32px 20px;
+        }
+        @include mobile-lg {
+            max-width: unset;
+            width: 100%;
+            padding: 32px 0;
+        }
     }
 
     &__title {
@@ -21,10 +36,20 @@
         line-height: 94%;
         letter-spacing: -0.02em;
         margin-bottom: 32px;
+        @include tablet {
+            font-size: 40px;
+            line-height: 90%;
+        }
+        @include mobile-lg {
+            text-align: center;
+        }
     }
 
     &__list {
         margin-bottom: 32px;
+        @include mobile-lg {
+            margin-bottom: unset;
+        }
     }
 
     &__list-item {
@@ -38,6 +63,9 @@
         &.active {
             font-weight: 700;
             opacity: 0;
+        }
+        @include tablet {
+            padding: 20px 24px;
         }
     }
 
@@ -53,10 +81,16 @@
         border: 1px solid rgba(53, 53, 53, 0.2);
         border-radius: 35px;
         width: fit-content;
+        @include mobile-lg {
+            display: none;
+        }
     }
 
     &__answer {
         width: 50%;
+        @include mobile-lg {
+            display: none;
+        }
     }
 
     &__answer-question {
