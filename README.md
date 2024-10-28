@@ -8,15 +8,19 @@ To get started, install all necessary dependencies:
 
 ```sh
 npm install
+```
 
-Scripts
-Development
+## InstallationScripts
+### InstallationDevelopment
 To run development tasks, use the command:
 
+```sh
 gulp
+```
 
 This command performs the following tasks:
 
+```sh
 clean:dev: Cleans the development directory.
 html:dev: Processes HTML files.
 sass:dev: Compiles SCSS to CSS.
@@ -26,13 +30,18 @@ files:dev: Copies files.
 js:dev: Processes JavaScript files.
 server:dev: Starts a development server with livereload support.
 watch:dev: Watches for file changes and automatically runs the corresponding tasks.
-Production
+```
+
+## Production
 To build the project for production, use the command:
 
+```sh
 gulp docs
+```
 
 This command performs the following tasks:
 
+```sh
 clean:dev: Cleans the development directory.
 html:docs: Processes HTML files for production.
 sass:docs: Compiles and minifies SCSS to CSS for production.
@@ -49,9 +58,12 @@ fonts/: Fonts.
 files/: Miscellaneous files.
 js/: JavaScript files.
 dist/: Build directory.
-Dependencies
+```
+
+## Dependencies
 The project uses the following dependencies:
 
+```sh
 @babel/core
 @babel/preset-env
 css-loader
@@ -75,3 +87,4 @@ sass
 style-loader
 webpack-stream
 normalize.scss
+```
