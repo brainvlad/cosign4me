@@ -89,7 +89,7 @@
         }
     
         &_mobile {
-            @media screen and (width > 768px) {
+            @media screen and (min-width: 769px) {
                 display: none !important;
             }
         }
