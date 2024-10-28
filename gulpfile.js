@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 
 require('./gulp/dev.js');
+require('./gulp/docs.js');
 
 gulp.task('default', 
     gulp.series('clean:dev', 
@@ -16,5 +17,18 @@ gulp.task('default',
             'server:dev',
             'watch:dev',
         )
+    )
+);
+
+gulp.task('docs', 
+    gulp.series('clean:dev', 
+        gulp.parallel(
+            'html:docs', 
+            'sass:docs', 
+            'images:docs',
+            'fonts:docs',
+            'files:docs',
+            'js:docs',
+        ),
     )
 );

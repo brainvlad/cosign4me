@@ -16,15 +16,28 @@
         }
     }
 
+    &__hand {
+        position: absolute;
+        width: 1620px;
+        bottom: -157px;
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;
+        
+        @include mobile-lg {
+            width: 1210px;
+            bottom: -271px;
+        }
+    }
+
     &__layout {
         min-height: 780px;
-        background-image: url(./../img/hero-bg.png);
+        background-image: url(./../img/bg.png);
         background-position: center bottom;
         background-color: $blue-dark;
         background-repeat: no-repeat;
-        @include mobile-lg {
-            background-size: auto 70%;
-        }
+        background-size: cover;
+        overflow: hidden;
     }
 
     &__body {
