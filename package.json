@@ -42,7 +42,6 @@
     "last 5 versions"
   ],
   "dependencies": {
-    "air-datepicker": "^3.5.3",
     "normalize.scss": "^0.1.0"
   }
 }
