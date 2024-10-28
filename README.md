@@ -18,6 +18,12 @@ To run development tasks, use the command:
 gulp
 ```
 
+The development build will be located in the directory:
+
+```sh
+build 
+```
+
 This command performs the following tasks:
 
 ```sh
@@ -37,6 +43,11 @@ To build the project for production, use the command:
 
 ```sh
 gulp docs
+```
+The production build will be located in the directory:
+
+```sh
+docs 
 ```
 
 This command performs the following tasks:
