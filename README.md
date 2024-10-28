@@ -1,4 +1,4 @@
-# Gulp HTML SCSS Project
+# Cosign4me Landing
 
 This project uses Gulp to automate tasks for building HTML, SCSS, images, fonts, files, and JavaScript.
 
